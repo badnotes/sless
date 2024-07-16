@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon";
+import BaseLayout from '../layouts/Base.astro';
+import PostPreview from "@/components/blog/PostPreviewB";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
+import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
+import { techList } from '../techs.ts';
+console.log(techList)
+
+const MAX_POSTS = 10;
+const allPosts = await getAllPosts();
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+const allPostsByPinned = sortMDByPinned(allPostsByDate);
+
+---
+
+<BaseLayout title="Home">
+	<section>
+		<h1 class="title">Site less</h1>
+		<p class="mb-4 sm:mb-8">
+			Site less, build site fast.
+		</p>
+		<div>
+			<span>You can find me on: </span>
+			<SocialMediaLinks/>
+		</div>
+	</section>
+
+	<section class="mt-5">
+	{
+	techList.map( (ele) => (
+		<div class="mt-10">
+		<h2 class="title"> {ele.key} </h2>
+		<ul class="grid grid-cols-2 gap-4">
+			{
+			ele.value.map(({ icon, href, title, desc }) => (
+				<li class="bg-stone-300 px-1 py-2">
+					<div class="flex flex-col">
+					<a
+						href={href}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="cody-link inline-block"
+					>
+					<div class="flex">
+						<Icon class="h-5 w-6 mr-2" name={icon} aria-hidden="true" focusable="false" />
+						{title}
+					</div>
+					</a>
+					<p class="inline-block sm:mt-2 ml-2">{desc}</p>
+					</div>
+				</li>
+			))
+			}
+		</ul>
+		</div>
+		))
+	}
+	</section>
+
+
+	<section class="mt-8 sm:mt-16">
+		<h2 class="title">Posts</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
+		</ul>
+	</section>
+
+</BaseLayout>
