@@ -1,17 +1,6 @@
 Sless
 ----
 
-## Table of Contents
-1. [Motivation](#motivation)
-2. [Key Features](#key-features)
-3. [Demo](#demo)
-4. [Quick Start](#quick-start)
-5. [Commands](#commands)
-6. [Configure](#configure)
-7. [Deploy](#deploy)
-8. [Extra Functionality](#extra-funtionality)
-9. [Credit](#credit)
-
 ## Motivation
 Although there are already so many blog themes out there, I wanted one that would give off
 that terminal/dev vibe and a few features that other themes did not have.
