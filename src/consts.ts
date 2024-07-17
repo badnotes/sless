@@ -27,6 +27,9 @@ export const siteConfig: Config = {
   }
 }
 
+// 快速搭建网站，使用框架和主题搭建静态网站。
+// 关于网站搭建的框架技术，以及使用教程和异常解决方法。
+
 /** 
   These are you social media links. 
   It uses https://github.com/natemoo-re/astro-icon#readme

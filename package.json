@@ -24,7 +24,13 @@
     "typescript": "^5.5.3"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.36",
+    "@iconify-json/file-icons": "^1.1.8",
+    "@iconify-json/icon-park": "^1.1.13",
+    "@iconify-json/logos": "^1.1.43",
     "@iconify-json/mdi": "^1.1.67",
+    "@iconify-json/simple-icons": "^1.1.109",
+    "@iconify-json/teenyicons": "^1.1.9",
     "@iconify-json/vscode-icons": "^1.1.35",
     "@tailwindcss/typography": "^0.5.10",
     "sass": "^1.77.8"
