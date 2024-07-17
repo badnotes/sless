@@ -1,11 +1,10 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/Base.astro';
 import PostPreview from "@/components/blog/PostPreviewB";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
 import { techList } from '../techs';
-console.log(techList)
 
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();

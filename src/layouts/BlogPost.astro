@@ -77,7 +77,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			</span>
 			{tags && (
 				<ul class="not-prose flex gap-2 flex-wrap">
-					<Icon class="w-5 h-5" name="carbon:tag-group" aria-hidden="true" focusable="false"/>
+					<Icon class="w-5 h-5" name="tag-group" aria-hidden="true" focusable="false"/>
 					{tags.map((tag: string) => (
 						<li class="tag">
 							<a href={`/tags/${tag}`}>{tag}</a>

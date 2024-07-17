@@ -1,29 +1,31 @@
 ---
-import '../styles/langSelect.scss'
-import { KNOWN_LANGUAGES, langPathRegex } from '../i18n/languages'
+import '../styles/langSelect.scss';
+import { KNOWN_LANGUAGES } from '../i18n/languages';
 
-const lang = 'en'
+const lang = "en";
 ---
 
-<div className="language-select-wrapper">
-
-  <select
-    className="language-select"
-    value={lang}
-    onChange={(e) => {
-      const newLang = (e.target as HTMLInputElement).value
-      let actualDest = window.location.pathname.replace(langPathRegex, '/')
-      if (actualDest == '/') actualDest = `/introduction`
-      window.location.pathname = '/' + newLang + actualDest
-    }}
-  >
-    {Object.entries(KNOWN_LANGUAGES).map(([key, value]) => {
-      return (
-        <option value={value} key={value}>
-          {key}
-        </option>
-      )
-    })}
+<div class="language-select-wrapper">
+  <select class="language-slt" value={lang} lanage-select>
+    {
+      Object.entries(KNOWN_LANGUAGES).map(([key, value]) => {
+        return (
+          <option value={value}>{key}</option>
+        )
+      })
+    }
   </select>
 </div>
 
+<script>
+    const heartButton = document.querySelectorAll('[lanage-select]');
+    const langPathRegex = /\/([a-z]{2}-?[A-Z]{0,2})\//
+    heartButton.forEach((button) => {
+      button.addEventListener('change', (e) => {
+        const newLang = (e.target as HTMLInputElement).value
+        let actualDest = window.location.pathname.replace(langPathRegex, '/')
+        if (actualDest == '/') actualDest = `/`
+        window.location.pathname = '/' + newLang + actualDest
+      });
+    });
+</script>

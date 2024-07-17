@@ -198,6 +198,12 @@ export const techList: Array<{
 				desc: "UnoCSS was started by one of the Windi CSS's team members, with a lot of inspiration taken from the work we did in Windi CSS. While Windi CSS is no longer actively maintained (as of March 2023), you may consider UnoCSS as a \"spiritual successor\" of Windi CSS.",
 				href: "https://unocss.dev/",
 				zh: "",
+			},{
+				title: "scss",
+				icon: "vscode-icons:file-type-scss2",
+				desc: "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. ",
+				href: "https://sass-lang.com/",
+				zh: "",
 			},
 		]
 	},

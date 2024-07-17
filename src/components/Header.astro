@@ -81,7 +81,7 @@ const url = new URL(Astro.request.url);
 		<div class="lang">
         {
           KNOWN_LANGUAGE_CODES.length > 1 && (
-            <LanguageSelect lang={lang} client:idle />
+            <LanguageSelect lang={lang} />
           )
         }
         </div>
