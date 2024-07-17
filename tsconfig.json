@@ -12,11 +12,13 @@
       ],
       "@/layouts/*": [
         "src/layouts/*.astro"
-      ]
+      ],
+      "@assets/*": ["src/icons/*"]
     }
   },
   "include": [
     "src",
-    "*.ts"
+    "*.ts",
+    "*.tsx"
   ]
 }

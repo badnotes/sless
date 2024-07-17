@@ -1,4 +1,7 @@
-export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: string; desc: string; href: string; zh: string; }> }> = [
+export const techList: Array<{ 
+	key: string; 
+	value: Array<{ title: string; icon: string; desc: string; href: string; zh: string; }> 
+}> = [
 	{
 		key: "IDE",
 		value: [
@@ -25,16 +28,19 @@ export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: 
 				icon: "simple-icons:astro",
 				desc: "Build fast websites, faster.",
 				href: "https://astro.build",
+				zh: "",
 			},{
 				title: "Hugo",
 				icon: "simple-icons:hugo",
 				desc: "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again. language: golang",
 				href: "https://gohugo.io/",
+				zh: "",
 			},{
 				title: "Jekyll",
 				icon: "logos:jekyll",
 				desc: "Transform your plain text into static websites and blogs. language: ruby",
 				href: "https://jekyllrb.com/",
+				zh: "",
 			},{
 				title: "Hexo",
 				icon: "logos:hexo",
@@ -71,21 +77,25 @@ export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: 
 				icon: "simple-icons:astro",
 				desc: "Astro themes",
 				href: "https://astro.build/themes/",
+				zh: "",
 			},{
 				title: "Hugo Theme",
 				icon: "simple-icons:hugo",
 				desc: "Hugo themes",
 				href: "https://themes.gohugo.io/",
+				zh: "",
 			},{
 				title: "Jekyll Theme",
 				icon: "logos:jekyll",
 				desc: "Jekyll themes",
 				href: "http://jekyllthemes.org/",
+				zh: "",
 			},{
 				title: "Hexo Theme",
 				icon: "logos:hexo",
 				desc: "Hexo themes",
 				href: "https://hexo.io/themes/",
+				zh: "",
 			},
 		]
 	},
@@ -169,21 +179,25 @@ export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: 
 				icon: "logos:tailwindcss-icon",
 				desc: "Rapidly build modern websites without ever leaving your HTML.",
 				href: "https://tailwindcss.com",
+				zh: "",
 			},{
 				title: "Windi CSS",
 				icon: "windicss",
 				desc: "Next generation utility-first CSS framework.",
 				href: "https://windicss.org/",
+				zh: "",
 			},{
 				title: "Twind",
 				icon: "twind",
 				desc: "The smallest, fastest, most feature complete tailwind-in-js solution in existence",
 				href: "https://twind.style/",
+				zh: "",
 			},{
 				title: "unocss",
 				icon: "unocss",
 				desc: "UnoCSS was started by one of the Windi CSS's team members, with a lot of inspiration taken from the work we did in Windi CSS. While Windi CSS is no longer actively maintained (as of March 2023), you may consider UnoCSS as a \"spiritual successor\" of Windi CSS.",
 				href: "https://unocss.dev/",
+				zh: "",
 			},
 		]
 	},
@@ -212,9 +226,9 @@ export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: 
 			{
 				title: "icones",
 				icon: "icones",
-				desc: "⚡️ Icon Explorer with Instant searching, powered by Iconify ",
+				desc: "Icon Explorer with Instant searching, powered by Iconify ",
 				href: "https://icones.js.org/",
-				zh: "⚡️ 具有即时搜索功能的图标浏览器，由 Iconify 提供支持",
+				zh: "具有即时搜索功能的图标浏览器，由 Iconify 提供支持",
 			},
 		]
 	},
@@ -226,6 +240,7 @@ export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: 
 				icon: "carbon:two-factor-authentication",
 				desc: "Welcome to webauthn.io! This site is designed by Duo Labs to test the new W3C Specification Web Authentication. WebAuthn is supported in the Chrome, Firefox",
 				href: "https://webauthn.io/",
+				zh: "",
 			},
 		]
 	},
@@ -273,12 +288,14 @@ export const techList: Array<{ key: string, vlaue: Array<{ title: string; icon: 
 				icon: "teenyicons:markdown-outline",
 				desc: "Simple and easy-to-use markup language.",
 				href: "https://www.markdownguide.org/",
+				zh: "",
 			},
 			{
 				title: "MDX",
 				icon: "file-icons:mdx",
 				desc: "Markdown for the component era.",
 				href: "https://mdxjs.com/",
+				zh: "",
 			},
 
 		]
