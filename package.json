@@ -25,9 +25,13 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "esbuild-plugin-babel": "^0.2.3",
     "sass": "^1.77.8"
   },
   "resolutions": {
+    "ansi-align": "^3.0.1"
+  },
+  "overrides": {
     "ansi-align": "^3.0.1"
   },
   "exports": {

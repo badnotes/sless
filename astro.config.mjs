@@ -3,6 +3,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { remarkReadingTime } from './src/utils/remark-reading-time.mjs';
 import icon from "astro-icon";
+import babel from 'esbuild-plugin-babel';
 
 import tailwind from "@astrojs/tailwind";
 
@@ -21,6 +22,15 @@ export default defineConfig({
       },
     }
   },
+  vite: {
+    // Example: Add custom vite plugins directly to your Astro project
+    plugins: [babel({
+      filter: /\.js$/,
+      config: {
+        babelrc: true
+      }
+    })],
+  }
 });
 
 
