@@ -9,6 +9,7 @@ export default {
 		extend: {
 			colors: {
 				bgColor: "var(--theme-bg)",
+				cardColor: "var(--theme-card)",
 				textColor: "var(--theme-text)",
 				link: "var(--theme-link)",
 				accent: "var(--theme-accent)",

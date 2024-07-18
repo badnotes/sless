@@ -33,7 +33,7 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 		<ul class="grid grid-cols-2 gap-4">
 			{
 			ele.value.map(({ icon, href, title, desc, zh }) => (
-				<li class="bg-stone-300 px-1 py-2">
+				<li class="card px-1 py-2">
 					<div class="flex flex-col">
 					<a
 						href={href}
@@ -66,3 +66,9 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 	</section>
 
 </BaseLayout>
+
+<style>
+	.card {
+		@apply bg-cardColor;
+	}
+</style>
