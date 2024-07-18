@@ -23,13 +23,6 @@ export default defineConfig({
     }
   },
   vite: {
-    // Example: Add custom vite plugins directly to your Astro project
-    plugins: [babel({
-      filter: /\.js$/,
-      config: {
-        babelrc: true
-      }
-    })],
   }
 });
 
