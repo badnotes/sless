@@ -11,6 +11,11 @@ export const getStaticPaths = (async ({ paginate }) => {
 	const allPosts = await getAllPosts(true, 'en');
 	const allPostsByDate = sortMDByDate(allPosts);
 	const allPostsByPinned = sortMDByPinned(allPostsByDate);
+	allPostsByPinned.forEach((post) => {
+		const [lang, ...slug] = post.slug.split('/');
+    	// console.log(post);
+		post.slug = slug;
+	});
 	const tags = getUniqueTags(allPosts);
 	return paginate(allPostsByPinned, { props: { tags }, pageSize: 10 });
 }) satisfies GetStaticPaths;

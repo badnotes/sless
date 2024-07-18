@@ -3,6 +3,10 @@ import type { CollectionEntry } from "astro:content";
 import type { HTMLTag, Polymorphic } from "astro/types";
 import FormattedDate from "@/components/FormattedDate";
 import { Icon } from 'astro-icon/components';
+import { getLanguageFromURL, useTranslatedPath, KNOWN_LANGUAGE_CODES } from '../../i18n/languages'
+
+const lang = getLanguageFromURL(Astro.request.url);
+const translatePath = useTranslatedPath(lang);
 
 type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
 	post: CollectionEntry<"blog" | "project">;
@@ -21,7 +25,7 @@ const urlBasePath = post.collection === "project" ? "projects" : post.collection
 	</div>
 	<div>
 	<span>
-		<a href={`/${urlBasePath}/${post.slug}/`} class="post-item">
+		<a href={translatePath(`/${urlBasePath}/${post.slug}/`)} class="post-item">
 			<h4 class="cody-link inline font-bold" >{post.data.title}</h4>
 		</a>
 		{ pinned &&
