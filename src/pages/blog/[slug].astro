@@ -6,7 +6,7 @@ import { getAllPosts } from '@/utils';
 
 export const getStaticPaths = (async () => {
 	// console.log(Astro.props)
-	const blogEntries = await getAllPosts(false, lang);
+	const blogEntries = await getAllPosts(false, 'en');
 	return blogEntries.map((post) => {
 		// console.log(post)
 		const [lang, ...slug] = post.slug.split('/');
