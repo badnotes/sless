@@ -29,7 +29,8 @@
     "sass": "^1.77.8"
   },
   "resolutions": {
-    "ansi-align": "^3.0.1"
+    "ansi-align": "^3.0.1",
+    "string-width": "^7.0.0"
   },
   "overrides": {
     "ansi-align": "^3.0.1",
