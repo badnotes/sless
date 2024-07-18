@@ -3,10 +3,12 @@ import HeaderLink from './HeaderLink.astro';
 import { siteConfig, NAV_LINKS } from '../consts';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import LanguageSelect from './LanguageSelect.astro'
-import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../i18n/languages'
+import { getLanguageFromURL, useTranslatedPath, KNOWN_LANGUAGE_CODES } from '../i18n/languages'
 
 const url = new URL(Astro.request.url);
 const lang = getLanguageFromURL(Astro.request.url);
+const translatePath = useTranslatedPath(lang);
+
 ---
 
 <header class="group relative mb-8 flex justify-between items-center gap-4" id="main-header">
@@ -27,7 +29,7 @@ const lang = getLanguageFromURL(Astro.request.url);
 			{NAV_LINKS.map(nav => (
 				<HeaderLink 
 					class="block py-2 sm:py-0" 
-					href={nav.path} 
+					href={translatePath(nav.path)} 
 					title={ lang == 'en' ? nav.title : nav.zh }
 					aria-current={url.pathname === nav.path ? "page" : false}
 					data-astro-prefetch

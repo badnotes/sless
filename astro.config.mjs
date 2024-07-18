@@ -21,7 +21,22 @@ export default defineConfig({
       },
     }
   },
-  vite: {
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "zh"]
+    // locales: [
+    //   {
+    //     path: "en", // 不包含斜杠
+    //     codes: ["en"]
+    //   },
+    //   {
+    //     path: "zh",
+    //     codes: ["zh"]
+    //   }
+    // ],
+    // routing: {
+    //     prefixDefaultLocale: true
+    // }
   }
 });
 

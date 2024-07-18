@@ -10,7 +10,7 @@ import { getLanguageFromURL } from '../../i18n/languages'
 
 const lang = getLanguageFromURL(Astro.request.url);
 const MAX_POSTS = 10;
-const allPosts = await getAllPosts();
+const allPosts = await getAllPosts(false, lang);
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const allPostsByPinned = sortMDByPinned(allPostsByDate);
 

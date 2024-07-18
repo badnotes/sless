@@ -70,6 +70,11 @@ export const NAV_LINKS: Array<{ title: string, path: string, zh: string }> = [
     zh: "博客",
   },
   {
+    title: "Series",
+    path: '/series',
+    zh: "系列"
+  },
+  {
     title: "About",
     path: "/about",
     zh: "关于",

@@ -1,7 +1,13 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { useTranslatedPath } from '../i18n/languages';
 
-export async function getAllPosts(filterHidden: boolean = false) {
-	return await getCollection("blog", ({ data }) => {
+
+export async function getAllPosts(filterHidden: boolean = false, lang: string) {
+	return await getCollection("blog", ({ id, data }) => {
+		const translatePath = useTranslatedPath(lang);
+		if (!id.startsWith(lang)) {
+			return false;
+		}
 		if (import.meta.env.PROD) {
 			if (filterHidden) {
 				return !data.hide;
