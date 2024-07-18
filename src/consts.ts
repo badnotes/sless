@@ -37,22 +37,22 @@ export const siteConfig: Config = {
 */
 export const socialLinks: Array<SocialLink> = [
   {
-    icon: "mdi:github",
+    icon: "mdi-github",
     friendlyName: "Github",
     link: "https://github.com/badnotes/sless",
   },
   {
-    icon: "mdi:linkedin",
+    icon: "mdi-linkedin",
     friendlyName: "LinkedIn",
     link: "#",
   },
   {
-    icon: "mdi:email",
+    icon: "mdi-email",
     friendlyName: "email",
     link: "mailto:whx10000@gmail.com",
   },
   {
-    icon: "mdi:rss",
+    icon: "mdi-rss",
     friendlyName: "rss",
     link: "/rss.xml"
   }
