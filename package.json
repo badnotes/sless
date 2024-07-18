@@ -32,7 +32,8 @@
     "ansi-align": "^3.0.1"
   },
   "overrides": {
-    "ansi-align": "^3.0.1"
+    "ansi-align": "^3.0.1",
+    "string-width": "^7.0.0"
   },
   "exports": {
     "import": "./es6entry.mjs",
