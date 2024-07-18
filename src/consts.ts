@@ -27,7 +27,7 @@ export const siteConfig: Config = {
   }
 }
 
-// 快速搭建网站，使用框架和主题搭建静态网站。
+// 
 // 关于网站搭建的框架技术，以及使用教程和异常解决方法。
 
 /** 
@@ -58,20 +58,34 @@ export const socialLinks: Array<SocialLink> = [
   }
 ];
 
-export const NAV_LINKS: Array<{ title: string, path: string }> = [
+export const NAV_LINKS: Array<{ title: string, path: string, zh: string }> = [
   {
     title: "Home",
     path: "/",
+    zh: "首页",
   },
   {
     title: "Blog",
     path: "/blog",
+    zh: "博客",
   },
   {
     title: "About",
     path: "/about",
+    zh: "关于",
   },
 ];
+
+export const langConfig: Record<string, {en: string, zh: string}> = {
+  "desc":{
+    en: "Site less, Quickly build websites, use frameworks and themes to build static websites.",
+    zh: "快速搭建网站，使用框架和主题搭建静态网站。"
+  },
+  "contactWords": {
+    en: "You can find me on: ",
+    zh: "您可以通过一下方式联系我们：",
+  }
+}
 
 export const KNOWN_LANGUAGES = {
   English: 'en',

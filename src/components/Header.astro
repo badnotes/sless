@@ -5,8 +5,8 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 import LanguageSelect from './LanguageSelect.astro'
 import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../i18n/languages'
 
-const lang = 'en'
 const url = new URL(Astro.request.url);
+const lang = getLanguageFromURL(Astro.request.url);
 ---
 
 <header class="group relative mb-8 flex justify-between items-center gap-4" id="main-header">
@@ -28,10 +28,10 @@ const url = new URL(Astro.request.url);
 				<HeaderLink 
 					class="block py-2 sm:py-0" 
 					href={nav.path} 
-					title={nav.title}
+					title={ lang == 'en' ? nav.title : nav.zh }
 					aria-current={url.pathname === nav.path ? "page" : false}
 					data-astro-prefetch
-				>{nav.title}</HeaderLink>
+				>{ lang == 'en' ? nav.title : nav.zh }</HeaderLink>
 			))}
 			<HeaderLink 
 				class="sm:hidden block py-2 sm:py-0" 

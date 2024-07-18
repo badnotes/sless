@@ -2,30 +2,39 @@
 import '../styles/langSelect.scss';
 import { KNOWN_LANGUAGES } from '../i18n/languages';
 
-const lang = "en";
+const { lang, ...attrs } = Astro.props;
 ---
 
 <div class="language-select-wrapper">
   <select class="language-slt" value={lang} lanage-select>
     {
       Object.entries(KNOWN_LANGUAGES).map(([key, value]) => {
-        return (
-          <option value={value}>{key}</option>
-        )
+        if (lang == value) {
+          return (
+            <option value={value} selected>{key}</option>
+          )
+        } else {
+          return (
+            <option value={value}>{key}</option>
+          )
+        }
       })
     }
   </select>
 </div>
 
 <script>
+    import { useTranslatedPath } from '../i18n/languages';
+
     const heartButton = document.querySelectorAll('[lanage-select]');
     const langPathRegex = /\/([a-z]{2}-?[A-Z]{0,2})\//
     heartButton.forEach((button) => {
       button.addEventListener('change', (e) => {
         const newLang = (e.target as HTMLInputElement).value
+        const translatePath = useTranslatedPath(newLang);
         let actualDest = window.location.pathname.replace(langPathRegex, '/')
         if (actualDest == '/') actualDest = `/`
-        window.location.pathname = '/' + newLang + actualDest
+        window.location.pathname = translatePath(actualDest)
       });
     });
 </script>

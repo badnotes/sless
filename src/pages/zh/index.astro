@@ -1,12 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
-import BaseLayout from '../layouts/Base.astro';
+import BaseLayout from '../../layouts/Base.astro';
 import PostPreview from "@/components/blog/PostPreviewB";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
-import { techList } from '../techs';
-import { langConfig } from '../consts';
-import { getLanguageFromURL } from '../i18n/languages'
+import { techList } from '../../techs';
+import { langConfig } from '../../consts';
+import { getLanguageFromURL } from '../../i18n/languages'
 
 const lang = getLanguageFromURL(Astro.request.url);
 const MAX_POSTS = 10;
@@ -49,7 +49,7 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 						{title}
 					</div>
 					</a>
-					<p class="inline-block sm:mt-2 ml-2">{desc}</p>
+					<p class="inline-block sm:mt-2 ml-2">{zh}</p>
 					</div>
 				</li>
 			))
