@@ -29,7 +29,7 @@ bun add -d @iconify-json/carbon
 ```
 
 Or you can directly download the svg file and put it in the project directory `src/icons`. You can download the icon from [iconify](https://icon-sets.iconify.design/).
-astro-icon is quite convenient to use. It can automatically import icons under the mdi module by default, and other modules need to be explicitly declared.
+`astro-icon` is quite convenient to use. It can automatically import icons under the `mdi` module by default, and other modules need to be explicitly declared.
 
 
 

@@ -280,6 +280,13 @@ export const techList: Array<{
 				href: "https://mermaid.js.org/",
 				zh: "以类似于 markdown 的方式从文本生成流程图或序列图等图表。",
 			},
+			{
+				title: "Iconfinder",
+				icon: "iconfinder",
+				desc: "Make beautiful designs faster. Millions of graphics for your design projects. Created by independent designers.",
+				href: "https://www.iconfinder.com/",
+				zh: "更快地制作精美的设计，为您的设计项目提供数百万张图形。由独立设计师创作。",
+			},
 		]
 	},
 	{

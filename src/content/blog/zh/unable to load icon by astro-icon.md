@@ -29,7 +29,7 @@ bun add -d @iconify-json/carbon
 ```
 
 或者直接下载改 svg 文件放到工程目录 `src/icons`， 可以在 [iconify](https://icon-sets.iconify.design/) 下载 icon 图标。
-astro-icon 使用起来还是挺方便的，默认可以自动导入 mdi 模块下的 icon, 其他模块需显示声明。
+`astro-icon` 使用起来还是挺方便的，默认可以自动导入 `mdi` 模块下的 icon, 其他模块需显示声明。
 
 
 

@@ -15,7 +15,7 @@ const translatePath = useTranslatedPath(lang);
 	<div class="block">
 		<a
 			class="title whitespace-nowrap" 
-			href="/"
+			href={translatePath("/")}
 			aria-current={url.pathname === "/" ? "page" : false}
 		>{siteConfig.title}</a>
 	</div>
