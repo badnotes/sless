@@ -95,7 +95,7 @@ export const langConfig: Record<string, {en: string, zh: string}> = {
     zh: "更新时间: ",
   },
   "readTime": {
-    en: " min read",
+    en: " minutes",
     zh: "分钟",
   }
 }
