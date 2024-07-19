@@ -65,6 +65,12 @@ export const techList: Array<{
 				desc: "Build Better Websites. Create modern, resilient user experiences with web fundamentals. ",
 				href: "https://remix.run/",
 				zh: "打造更出色的网站。利用网络基础知识打造现代、弹性的用户体验。",
+			},{
+				title: "VitePress",
+				icon: "simple-vitepress",
+				desc: "Vite & Vue Powered Static Site Generator, Markdown to Beautiful Docs in Minutes, What is VitePress? Quickstart",
+				href: "https://vitepress.dev",
+				zh: "由 Vite 和 Vue 驱动的静态站点生成器，将 Markdown 变成优雅的文档，只需几分钟",
 			},
 			{
 				title: "Hakyll",
@@ -271,6 +277,13 @@ export const techList: Array<{
 				desc: "Freedom to choose icons. All popular icon sets, one framework. Over 200,000 open source vector icons.",
 				href: "https://iconify.design/",
 				zh: "自由选择图标。所有流行的图标集，一个框架。超过 200,000 个开源矢量图标。",
+			},
+			{
+				title: "Yesicon",
+				icon: "yesicon",
+				desc: "High-Quality Vector Icons from Top Design Teams. 175 Open-Source, Free Icon sets. A Handy Tool for Developers and Designers to Ctrl+V. ",
+				href: "https://yesicon.app/",
+				zh: "来自顶级设计团队的高品质矢量图标。175 个开源免费图标集。开发人员和设计师的既可便捷 Ctrl+V。",
 			},
 			{
 				title: "icones",
