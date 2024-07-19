@@ -22,8 +22,8 @@ export const siteConfig: Config = {
   description: "",
   lang: "en-GB",
   profile: {
-    author: "fyme.cc",
-    description: "your bio description"
+    author: "fyme.v",
+    description: "An indie developer"
   }
 }
 
@@ -39,7 +39,7 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi-github",
     friendlyName: "Github",
-    link: "https://github.com/badnotes/sless",
+    link: "https://github.com/badnotes",
   },
   {
     icon: "mdi-linkedin",
