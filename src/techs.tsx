@@ -59,6 +59,12 @@ export const techList: Array<{
 				desc: "Your one-stop static site engine, Forget dependencies, Everything you need in one binary. language: rust",
 				href: "https://www.getzola.org/",
 				zh: "您的一站式静态站点引擎, 忘掉依赖项, 您需要的一切都包含在一个二进制文件中。",
+			},{
+				title: "Remix",
+				icon: "ri-remix",
+				desc: "Build Better Websites. Create modern, resilient user experiences with web fundamentals. ",
+				href: "https://remix.run/",
+				zh: "打造更出色的网站。利用网络基础知识打造现代、弹性的用户体验。",
 			},
 			{
 				title: "Hakyll",

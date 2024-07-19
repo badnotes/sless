@@ -42,11 +42,11 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 						href={href}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="cody-link inline-block text-xl"
+						class="cody-link inline-block"
 					>
 					<div class="flex">
-						<Icon class="h-5 w-6 mr-2" name={icon} aria-hidden="true" focusable="false" />
-						{title}
+						<Icon class="h-5 w-6 mr-2 mt-1" name={icon} aria-hidden="true" focusable="false" />
+						<span class="text-xl">{title}</span>
 					</div>
 					</a>
 					<p class="inline-block sm:mt-2 ml-2">{desc}</p>
