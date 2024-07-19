@@ -168,6 +168,18 @@ export const techList: Array<{
 				desc: "A React UI component library based on the Ant Design design system, used for developing enterprise-level mid- and back-end products.",
 				href: "https://ant.design",
 				zh: "基于Ant Design 设计体系的React UI 组件库，用于研发企业级中后台产品。",
+			},{
+				title: "Ionic",
+				icon: "ionic",
+				desc: "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript. ",
+				href: "https://ionicframework.com/",
+				zh: "一个强大的跨平台 UI 工具包，用于使用 HTML、CSS 和 JavaScript 构建原生质量的 iOS、Android 和渐进式 Web 应用程序。",
+			},{
+				title: "FloatingUI",
+				icon: "floating-ui",
+				desc: "A JavaScript library to position floating elements and create interactions for them.",
+				href: "https://floating-ui.com/",
+				zh: "用于定位 浮动元素 并为其创建交互的 JavaScript 库。",
 			},
 		]
 	},
@@ -199,11 +211,36 @@ export const techList: Array<{
 				href: "https://unocss.dev/",
 				zh: "UnoCSS 是由 Windi CSS 的一名团队成员发起的，其灵感来源于我们在 Windi CSS 中所做的工作。虽然 Windi CSS 不再积极维护（截至 2023 年 3 月），但您可以将 UnoCSS 视为 Windi CSS 的“精神继承者”。",
 			},{
-				title: "scss",
+				title: "Sass",
 				icon: "vscode-file-type-scss2",
 				desc: "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. ",
 				href: "https://sass-lang.com/",
 				zh: "Sass是世界上最成熟、最稳定、最强大的专业级CSS扩展语言。",
+			},{
+				title: "Bootstrap",
+				icon: "skill-bootstrap",
+				desc: "Build fast, responsive sites with Bootstrap Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins. ",
+				href: "https://getbootstrap.com/",
+				zh: "使用 Bootstrap 构建快速且响应式的网站。强大、可扩展、且功能丰富的前端工具包。 使用 Sass 构建和定制，利用预构建的网格系统和组件，并通过强大的 JavaScript 插件将项目变为现实。 ",
+			},{
+				title: "Styled-components",
+				icon: "skill-styled",
+				desc: "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. ",
+				href: "https://styled-components.com/",
+				zh: "利用标记模板字面量（JavaScript 的最新添加）和 CSS 的强大功能，styled-components 允许你编写实际的 CSS 代码来设置组件的样式。 ",
+			},{
+				title: "Lesscss",
+				icon: "lesscss",
+				desc: "It's CSS, with just a little more.",
+				href: "https://lesscss.org/",
+				zh: "它是 CSS，只是多了一点东西。",
+			},
+			{
+				title: "stylus",
+				icon: "logos-stylus",
+				desc: "Expressive, dynamic, and robust CSS. An expressive, robust, feature-rich CSS language built for Node.js",
+				href: "https://stylus-lang.com/",
+				zh: "富有表现力、动态、强大的 CSS。专为 Nodejs 构建的富有表现力、强大、功能丰富的 CSS 语言。",
 			},
 		]
 	},
@@ -232,9 +269,16 @@ export const techList: Array<{
 			{
 				title: "icones",
 				icon: "icones",
-				desc: "Icon Explorer with Instant searching, powered by Iconify ",
+				desc: "Icon Explorer with Instant searching, powered by Iconify. ",
 				href: "https://icones.js.org/",
 				zh: "具有即时搜索功能的图标浏览器，由 Iconify 提供支持",
+			},
+			{
+				title: "Mermaid",
+				icon: "mermaid",
+				desc: "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown. ",
+				href: "https://mermaid.js.org/",
+				zh: "以类似于 markdown 的方式从文本生成流程图或序列图等图表。",
 			},
 		]
 	},
@@ -287,6 +331,18 @@ export const techList: Array<{
 		]
 	},
 	{
+		key: "CMS",
+		value: [
+			{
+				title: "Strapi",
+				icon: "logos-strapi",
+				desc: "The original purpose of the project was to help Bootstrap your API: that's how Strapi was created. Now, Strapi is an open-source headless CMS.",
+				href: "https://strapi.io",
+				zh: "该项目最初的目的是帮助用户快速 创建（strap） API：这就是 Strapi 的初衷。现在，Strapi 是一个开源的无头（headless） CMS。",
+			},
+		]
+	},
+	{
 		key: "Other",
 		value: [
 			{
@@ -302,6 +358,13 @@ export const techList: Array<{
 				desc: "Markdown for the component era.",
 				href: "https://mdxjs.com/",
 				zh: "组件时代的 Markdown。",
+			},
+			{
+				title: "Handlebars",
+				icon: "handlebarsjs",
+				desc: "Minimal templating on steroids.",
+				href: "https://handlebarsjs.com/",
+				zh: "轻量的语义化模板 ",
 			},
 
 		]

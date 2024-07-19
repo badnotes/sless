@@ -18,8 +18,10 @@ export function getFormattedDate(
   locale?: string,
 ) {
   if (typeof options !== "undefined") {
-    return new Date(date).toLocaleDateString(locale ?? dateOptions.locale, options);
+    // return new Date(date).toLocaleDateString(locale ?? dateOptions.locale, options);
+    return new Date(date).toISOString().split('T')[0];
   }
 
-  return dateFormat.format(new Date(date));
+  // return dateFormat.format(new Date(date));
+  return new Date(date).toISOString().split('T')[0];
 }
