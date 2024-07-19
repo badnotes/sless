@@ -49,7 +49,7 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi-email",
     friendlyName: "email",
-    link: "mailto:whx10000@gmail.com",
+    link: "mailto:admin@sless.top",
   },
   {
     icon: "mdi-rss",
