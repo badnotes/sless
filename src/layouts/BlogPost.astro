@@ -7,13 +7,14 @@ import TOC from '@/components/TableOfContents';
 import BackToTopBtn from '@/components/BackToTopBtn';
 import CopyBtn from '@/components/CopyBtn';
 import { Icon } from 'astro-icon/components';
-import { siteConfig } from '../consts';
+import { siteConfig, langConfig } from '../consts';
 
 interface Props {
 	post: CollectionEntry<"blog">;
+	lang: string;
 }
 
-const {post} = Astro.props
+const {post, lang} = Astro.props
 
 const {
 	slug,
@@ -45,7 +46,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 
 <Layout title={title} description={description} image={socialImage} articleDate={articleDate}>
 	<article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-4xl">
-		<header class="space-y-2">
+		<header class="space-y-2 mb-10">
 			{
 				heroImage &&
 				<div class="aspect-h-9 aspect-w-16 mb-6 w-full flex justify-center">
@@ -62,15 +63,16 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				<h1 class="text-3xl my-0">{title}</h1>
 				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-sm font-semibold">draft</span>)}
 			</div>
-			<span class="font-semibold text-textColor flex gap-2 items-center">
-				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
+			<div class="">
+			<span class="font-semibold text-textColor flex gap-2 items-center mb-4 mt-2">
+				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions} locale={lang}/>
 				<span>
-					/ {minutesRead}
+					/ { minutesRead }{langConfig['readTime'][lang]}
 				</span>
 				{
 					updatedDate && (
 						<div class="italic px-2 bg-accent-2 w-fit text-sm font-normal">
-							Last updated: <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions} />
+							{ langConfig['blogUpt'][lang] } <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions}  locale={lang}/>
 						</div>
 					)
 				}
@@ -85,9 +87,10 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 					))}
 				</ul>
 			)}
+			</div>
 		</header>
 		<hr class="my-4"/>
-		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+		<main class="prose-base prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent mb-10 mt-10">
 			<slot />
 		</main>
 		<BackToTopBtn/>

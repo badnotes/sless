@@ -89,6 +89,14 @@ export const langConfig: Record<string, {en: string, zh: string}> = {
   "contactWords": {
     en: "You can find me on: ",
     zh: "您可以通过一下方式联系我们：",
+  },
+  "blogUpt": {
+    en: "Last updated: ",
+    zh: "更新时间: ",
+  },
+  "readTime": {
+    en: " min read",
+    zh: "分钟",
   }
 }
 

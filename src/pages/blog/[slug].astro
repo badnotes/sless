@@ -9,7 +9,7 @@ export const getStaticPaths = (async () => {
 	const blogEntries = await getAllPosts(false, 'en');
 	return blogEntries.map((post) => {
 		const [lang, ...slug] = post.slug.split('/');
-    	return { params: { lang: lang, slug: slug[0]}, props: { post } };
+    	return { params: { lang: lang, slug: slug[0]}, props: { post, lang } };
 	});
 }) satisfies GetStaticPaths;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
@@ -18,6 +18,6 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost post={post}>
+<BlogPost post={post} lang='en'>
 	<Content />
 </BlogPost>

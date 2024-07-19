@@ -22,16 +22,25 @@ src/components/ThemeToggle.astro:50:40 - error ts(2345): Argument of type 'strin
   Type 'null' is not assignable to type 'string'.
 ```
 
+The reason for the error is that `ts` check data may be empty:
 
 ```ts
-    window.localStorage.setItem('theme', theme);
+   
+  window.localStorage.setItem('theme', theme);
 
 ```
+
+Then let's add an empty judgment:
 
 ```ts
   if (theme !== null) {
     window.localStorage.setItem('theme', theme);
   }
 ```
+
+<br>
+
+Links:
+- https://www.typescriptlang.org/
 
 

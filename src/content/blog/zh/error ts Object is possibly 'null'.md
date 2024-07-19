@@ -5,9 +5,9 @@ pubDate: 'Jul 18 2024'
 heroImage: 
   src: '/blog-placeholder-5.jpg'
   alt: 'astro error'
-tags: ["typescript", "error"]
+tags: ["Typescript", "Error"]
 updatedDate: 'Jul 18 2024'
-series: "error"
+series: "Error"
 ---
 
 
@@ -22,11 +22,15 @@ src/components/ThemeToggle.astro:50:40 - error ts(2345): Argument of type 'strin
   Type 'null' is not assignable to type 'string'.
 ```
 
+错误的原因是 `ts` 检查数据可能为空：
 
 ```ts
-    window.localStorage.setItem('theme', theme);
+  
+  window.localStorage.setItem('theme', theme);
 
 ```
+
+那我们加一下空判断：
 
 ```ts
   if (theme !== null) {
@@ -34,4 +38,7 @@ src/components/ThemeToggle.astro:50:40 - error ts(2345): Argument of type 'strin
   }
 ```
 
+<br>
 
+Links:
+- https://www.typescriptlang.org/
