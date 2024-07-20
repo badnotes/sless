@@ -19,7 +19,7 @@ type SocialLink = {
 
 export const siteConfig: Config = {
   title: "Site Less",
-  description: "",
+  description: "Site less, Quickly build websites, use frameworks and themes to build static websites, and some example. Welcome indie developer.",
   lang: "en-GB",
   profile: {
     author: "fyme.v",
@@ -83,8 +83,8 @@ export const NAV_LINKS: Array<{ title: string, path: string, zh: string }> = [
 
 export const langConfig: Record<string, {en: string, zh: string}> = {
   "desc":{
-    en: "Site less, Quickly build websites, use frameworks and themes to build static websites.",
-    zh: "快速搭建网站，使用框架和主题搭建静态网站。"
+    en: "Site less, Quickly build websites, use frameworks and themes to build static websites, and some example. Welcome indie developer.",
+    zh: "快速搭建网站，使用框架和主题搭建静态网站, 还有一些相关材料。"
   },
   "contactWords": {
     en: "You can find me on: ",

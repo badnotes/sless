@@ -50,7 +50,7 @@ export const techList: Array<{
 			},{
 				title: "Ghost",
 				icon: "icon-park-ghost",
-				desc: "Ghost is a blogging platform written in JavaScript and is open source under the MIT license. Ghost is designed to simplify the process of publishing personal websites and online publishing. Ghost is a personal blogging system that is developed using the Node.js language and MySQL database, and supports MySQL, MariaDB, SQLite, and PostgreSQL.",
+				desc: "Ghost is designed to simplify the process of publishing personal websites and online publishing. Or a personal blogging system that is developed using the NodeJs and SQL database. language: JavaScript",
 				href: "https://ghost.org/",
 				zh: "Ghost是用JavaScript编写的博客平台，基于MIT许可证开放源代码。Ghost的设计主旨是简化个人网站发布以及网上出版的过程。 Ghost是一款个人博客系统，它使用Node.js语言和MySQL数据库开发，同时支持MySQL、MariaDB、SQLite和PostgreSQL。",
 			},{
