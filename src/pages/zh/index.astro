@@ -37,20 +37,28 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 			{
 			ele.value.map(({ icon, href, title, desc, zh }) => (
 				<li class="card px-1 py-2">
-					<div class="flex flex-col">
-					<a
-						href={href}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="cody-link inline-block text-xl"
-					>
 					<div class="flex">
-						<Icon class="h-5 w-6 mr-2" name={icon} aria-hidden="true" focusable="false" />
-						{title}
+						<div class="flex-none">
+							<a
+								href={href}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cody-link inline-block"
+							>
+								<div class="flex">
+									<Icon class="h-5 w-6 mr-2 mt-1" name={icon} aria-hidden="true" focusable="false" />
+									<span class="text-xl">{title}</span>
+								</div>
+							</a>
+						</div>
+						<div class="grow"> </div>
+						<div class="flex-none mr-1">
+							<a href="javascript:void(0);" class="text-xl">
+								<Icon class="h-5 w-6 mr-2 mt-1" name="icon-like" aria-hidden="true" focusable="false" />
+							</a>
+						</div>
 					</div>
-					</a>
 					<p class="inline-block sm:mt-2 ml-2">{zh}</p>
-					</div>
 				</li>
 			))
 			}
