@@ -312,6 +312,13 @@ export const techList: Array<{
 				href: "https://www.iconfinder.com/",
 				zh: "更快地制作精美的设计，为您的设计项目提供数百万张图形。由独立设计师创作。",
 			},
+			{
+				title: "Squoosh",
+				icon: "squoosh",
+				desc: "Make images smaller using best-in-class codecs, right in the browser. ",
+				href: "https://squoosh.app/",
+				zh: "直接在浏览器中使用一流的编解码器缩小图像。",
+			},
 		]
 	},
 	{
