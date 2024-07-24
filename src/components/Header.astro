@@ -3,11 +3,21 @@ import HeaderLink from './HeaderLink.astro';
 import { siteConfig, NAV_LINKS } from '../consts';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import LanguageSelect from './LanguageSelect.astro'
-import { getLanguageFromURL, useTranslatedPath, KNOWN_LANGUAGE_CODES } from '../i18n/languages'
+import { getLanguageFromURL, useTranslatedPath, KNOWN_LANGUAGE_CODES, defaultLang } from '../i18n/languages'
+
 
 const url = new URL(Astro.request.url);
 const lang = getLanguageFromURL(Astro.request.url);
 const translatePath = useTranslatedPath(lang);
+
+// const d1 = Astro.preferredLocale
+// const d2 = Astro.preferredLocaleList
+// const d3 = Astro.currentLocale
+
+// console.log("def0:", defaultLang)
+// console.log("def1:", d1)
+// console.log("def2:", d2)
+// console.log("def3:", d3)
 
 ---
 
@@ -134,3 +144,9 @@ const translatePath = useTranslatedPath(lang);
 
 	customElements.define("nav-button", MobileNavBtn);
 </script>
+
+<!-- <script>
+	var userLang = navigator.language || navigator.userLanguage; 
+	console.log ("The language is: " + userLang);
+</script> 
+-->

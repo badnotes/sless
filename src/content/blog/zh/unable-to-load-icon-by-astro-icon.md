@@ -3,7 +3,7 @@ title: 'Unable to load icon by astro-icon'
 description: 'Astro 工程缺失 icon: Unable to load icon by astro-icon'
 pubDate: 'Jul 19 2024'
 heroImage: 
-  src: '/blog-placeholder-5.jpg'
+  src: '/blog-placeholder-error.jpg'
   alt: 'astro error'
 tags: ["Typescript", "Error", "Icon"]
 updatedDate: 'Jul 19 2024'

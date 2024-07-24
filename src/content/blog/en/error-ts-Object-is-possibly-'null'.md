@@ -7,7 +7,7 @@ heroImage:
   alt: 'astro error'
 tags: ["typescript", "error"]
 updatedDate: 'Jul 18 2024'
-series: "error"
+series: "Error"
 ---
 
 

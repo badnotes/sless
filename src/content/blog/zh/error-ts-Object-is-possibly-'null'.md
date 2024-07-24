@@ -3,7 +3,7 @@ title: 'typescript error ts Object is possibly null'
 description: '当我用 Astro 构建网站时, 出现错误: "error ts Object is possibly null."'
 pubDate: 'Jul 18 2024'
 heroImage: 
-  src: '/blog-placeholder-5.jpg'
+  src: '/blog-placeholder-error.jpg'
   alt: 'astro error'
 tags: ["Typescript", "Error"]
 updatedDate: 'Jul 18 2024'

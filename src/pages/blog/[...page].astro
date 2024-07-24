@@ -14,7 +14,7 @@ export const getStaticPaths = (async ({ paginate }) => {
 	allPostsByPinned.forEach((post) => {
 		const [lang, ...slug] = post.slug.split('/');
     	// console.log(post);
-		post.slug = slug;
+		post.slug = slug[0];
 	});
 	const tags = getUniqueTags(allPosts);
 	return paginate(allPostsByPinned, { props: { tags }, pageSize: 10 });

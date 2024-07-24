@@ -54,6 +54,12 @@ export const techList: Array<{
 				href: "https://ghost.org/",
 				zh: "Ghost是用JavaScript编写的博客平台，基于MIT许可证开放源代码。Ghost的设计主旨是简化个人网站发布以及网上出版的过程。 Ghost是一款个人博客系统，它使用Node.js语言和MySQL数据库开发，同时支持MySQL、MariaDB、SQLite和PostgreSQL。",
 			},{
+				title: "Gatsby",
+				icon: "mdi-gatsby",
+				desc: "Gatsby is a React-based static website generator suitable for websites that require dynamic content and complex interactions. It has a rich plugin ecosystem that can easily integrate various services.",
+				href: "https://www.gatsbyjs.com/",
+				zh: "Gatsby 是基于 React 的静态网站生成器，适合于需要动态内容和复杂交互的网站。它拥有丰富的插件生态系统，可以轻松集成各种服务。",
+			},{
 				title: "Zola",
 				icon: "zola",
 				desc: "Your one-stop static site engine, Forget dependencies, Everything you need in one binary. language: rust",
@@ -202,7 +208,7 @@ export const techList: Array<{
 				title: "Tailwind CSS",
 				icon: "logos-tailwindcss-icon",
 				desc: "Rapidly build modern websites without ever leaving your HTML.",
-				href: "https://tailwindcss.com",
+				href: "https://tailwindcss.com/docs/installation",
 				zh: "无需离开 HTML 即可快速构建现代网站。",
 			},{
 				title: "Windi CSS",
@@ -275,7 +281,7 @@ export const techList: Array<{
 				title: "Iconify.design",
 				icon: "simple-iconify",
 				desc: "Freedom to choose icons. All popular icon sets, one framework. Over 200,000 open source vector icons.",
-				href: "https://iconify.design/",
+				href: "https://icon-sets.iconify.design/",
 				zh: "自由选择图标。所有流行的图标集，一个框架。超过 200,000 个开源矢量图标。",
 			},
 			{
