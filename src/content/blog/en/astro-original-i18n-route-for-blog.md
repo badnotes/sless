@@ -1,6 +1,6 @@
 ---
-title: 'Astro 原生 i18n 实现多语言内容的路由'
-description: 'Astro国际化多语言内容的路由处理方法'
+title: 'Astro native i18n implements routing for multilingual content'
+description: 'Astro internationalized multilingual content routing method'
 pubDate: 'Jul 23 2024'
 heroImage: 
   src: '/blog-placeholder-i18n.jpg'
