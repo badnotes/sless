@@ -27,7 +27,7 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 			<SocialMediaLinks/>
 		</div>
 	</section>
-	<nav class="navbar">
+	<nav id="navbar" class="navbar invisible">
 		<div class="container">
 			<div id="main-menu" class="mt-20 border-y-2 border-dotted border-gray-700 flex flex-col p-5">
 				{
@@ -94,9 +94,35 @@ const allPostsByPinned = sortMDByPinned(allPostsByDate);
 	const options = {
 		sectionClass: '.scrollspy',           // Query selector to your sections
 		menuActiveTarget: '.menu-item',       // Query selector to your elements that will be added `active` class
-		offset: 80,                          // Menu item will active before scroll to a matched section 100px
+		offset: 80,                           // Menu item will active before scroll to a matched section 100px
 		scrollContainer: '.scroll-container', // Listen scroll behavior on `.scroll-container` instead of `window`
 	}
 	// or shorter:
 	scrollSpy('#main-menu', options)
+
+	window.addEventListener('resize', () => {
+		// 👇️ const box: HTMLElement | null
+		const box = document.getElementById('navbar');
+		const wth = window.innerWidth;
+		if (box != null ) {
+			if (wth < 1480) {
+		  		box.classList.add('invisible');
+			} else {
+		  		box.classList.remove('invisible');
+			}
+		}
+
+    })
+
+	const box = document.getElementById('navbar');
+	const wth = window.innerWidth;
+	if (box != null ) {
+		if (wth < 1480) {
+	  		box.classList.add('invisible');
+		} else {
+	  		box.classList.remove('invisible');
+		}
+	}
+
+
 </script>

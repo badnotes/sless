@@ -6,7 +6,7 @@ heroImage:
   src: '/blog-placeholder-i18n.jpg'
   alt: 'astro error'
 tags: ["Astro", "Typescript", "i18n"]
-updatedDate: 'Jul 22 2024'
+updatedDate: 'Jul 23 2024'
 series: "Astro"
 ---
 
