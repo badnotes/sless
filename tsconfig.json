@@ -14,7 +14,8 @@
         "src/layouts/*.astro"
       ],
       "@/assets/*": ["src/icons/*"]
-    }
+    },
+    "experimentalDecorators": true,
   },
   "include": [
     "src",

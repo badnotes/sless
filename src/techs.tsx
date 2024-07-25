@@ -21,7 +21,7 @@ export const techList: Array<{
 		]
 	},
 	{
-		key: "Web Framwork",
+		key: "Web",
 		value: [
 			{
 				title: "Astro",
@@ -88,7 +88,7 @@ export const techList: Array<{
 		]
 	},
 	{
-		key: "Web Theme",
+		key: "Theme",
 		value: [
 			{
 				title: "Astro Theme",
@@ -118,7 +118,7 @@ export const techList: Array<{
 		]
 	},
 	{
-		key: "UI Framwork",
+		key: "UI",
 		value: [
 			{
 				title: "React",
@@ -199,10 +199,17 @@ export const techList: Array<{
 				href: "https://floating-ui.com/",
 				zh: "用于定位 浮动元素 并为其创建交互的 JavaScript 库。",
 			},
+			{
+				title: "PrelineUI",
+				icon: "preline",
+				desc: "Preline UI is an open-source Tailwind CSS components library for any needs. Comes with UI examples & blocks, templates, plugins, Figma design system and more. ",
+				href: "https://preline.co/",
+				zh: "Preline UI 是一个开源的 Tailwind CSS 组件库，可满足任何需求。附带 UI 示例和块、模板、插件、Figma 设计系统等。",
+			},
 		]
 	},
 	{
-		key: "CSS Framwork",
+		key: "CSS",
 		value: [
 			{
 				title: "Tailwind CSS",
@@ -263,7 +270,7 @@ export const techList: Array<{
 		]
 	},
 	{
-		key: "Image/Icon",
+		key: "Image",
 		value: [
 			{
 				title: "Svgo",
@@ -334,7 +341,7 @@ export const techList: Array<{
 		]
 	},
 	{
-		key: "Deploy Space",
+		key: "Deploy",
 		value: [
 			{
 				title: "Github Pages",
